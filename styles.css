@@ -1,0 +1,242 @@
+body{
+ margin: 0;
+ font-family: Arial, sans-serif;
+ overflow: hidden;
+}
+
+
+#tela-inicial {
+ background-image: url("https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/meta.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ position: relative;
+ flex-direction: column;
+}
+
+#tela-inicial.hidden {
+ opacity: 0;
+ visibility: hidden;
+}
+
+.title {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  color: #F0E68C; 
+  font-size: 3em;
+  text-shadow: 2px 2px 4px black;
+}
+
+.start-button {
+ height: 240px;
+ width: 240px;
+ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/Copilot_20251009_204634.png);
+ background-size: cover;
+ cursor: pointer;
+ background-position: center;
+ background-color: transparent;
+ border: none;
+ position: absolute;
+ bottom: 240px;
+ left: 300px;
+}
+
+.start-button:hover{
+ filter: brightness(65%);
+}
+
+#tela-introducao{
+ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/brrbrr.png);
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+#tela-introducao.visible {
+ opacity: 1;
+ visibility: visible;
+}
+
+#tela-introducao.hidden {
+ opacity: 0;
+ visibility: hidden;
+}
+
+.progredir{
+ height: 140px;
+ width: 240px;
+ margin-bottom: 50px;
+ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/Avan%C3%A7ar.png);
+ background-size: cover;
+ cursor: pointer;
+ background-position: center;
+ background-color: transparent;
+ border: none;
+position: fixed;
+ bottom: 20px;   
+ right: 20px;   
+ z-index: 1000;  
+}
+
+.progredir:hover{
+  filter: brightness(65%);
+}
+
+#tela-historia-1{
+ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+#tela-historia-1.visible{
+ opacity: 1;
+ visibility: visible;
+}
+
+#tela-historia-1.hidden{
+ opacity: 0;
+ visibility: hidden;
+}
+
+.levantar{
+ height: 140px;
+ width: 240px;
+ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/bot%C3%A3o-removebg-preview.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ cursor: pointer;
+ background-position: center;
+ background-color: transparent;
+ border: none;
+ position: fixed;
+}
+
+.levantar:hover{
+  filter: brightness(65%);
+}
+
+#tela-levantar{
+ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+.mensagem-visivel{
+  color: #F0E68C; 
+  font-size: 1.5em;
+  text-align: center;
+  max-width: 80%;
+  padding: 10px;
+}
+
+#tela-levantar.visible {
+ opacity: 1;
+ visibility: visible;
+}
+
+#tela-levantar.hidden {
+ opacity: 0;
+ visibility: hidden;
+}
+
+#telaquarto{
+ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+#telaquarto.visible{
+ opacity: 1;
+ visibility: visible;
+}
+
+#telaquarto.hidden{
+ opacity: 0;
+ visibility: hidden;
+}
+
+.mensagem-visivel1{
+  color: #F0E68C; 
+  font-size: 1.5em;
+  text-align: center;
+  max-width: 80%;
+  padding: 10px;
+}
+
+#telaquarto1{
+ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+#telaquarto1.visible{
+ opacity: 1;
+ visibility: visible;
+}
+
+#telaquarto1.hidden{
+ opacity: 0;
+ visibility: hidden;
+}
+
