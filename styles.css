@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 body{
  margin: 0;
  font-family: Arial, sans-serif;
@@ -6,7 +9,7 @@ body{
 
 
 #tela-inicial {
- background-image: url("https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/meta.png");
+ background-image: url("https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/novo%20fundo.png");
  background-position: center;
  background-repeat: no-repeat;
  height: 100vh;
@@ -16,35 +19,32 @@ body{
  flex-direction: column;
 }
 
-#tela-inicial.hidden {
- opacity: 0;
- visibility: hidden;
+.titulo-imagem {
+  width: 80%;
+  max-width: 450px; 
+  margin-bottom: 40px; 
 }
 
-.title {
-  padding-top: 50px;
-  margin-bottom: 50px;
-  color: #F0E68C; 
-  font-size: 3em;
-  text-shadow: 2px 2px 4px black;
+.start-button, .progredir, .levantar {
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.start-button:hover, .progredir:hover, .levantar:hover {
+  filter: brightness(65%);
 }
 
 .start-button {
  height: 240px;
- width: 240px;
- background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/Copilot_20251009_204634.png);
- background-size: cover;
- cursor: pointer;
- background-position: center;
- background-color: transparent;
- border: none;
+ width: 280px;
+ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/inicio.png);
  position: absolute;
  bottom: 240px;
  left: 300px;
-}
-
-.start-button:hover{
- filter: brightness(65%);
 }
 
 #tela-introducao{
@@ -65,14 +65,9 @@ body{
  transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
 }
 
-#tela-introducao.visible {
+#tela-introducao.visible, #tela-historia-1.visible, #tela-levantar.visible, #telaquarto.visible, #telaquarto1.visible, #ODespertar.visible, #APorta.visible, #AComida.visible, #OQuartovazio.visible, #AMusicafinal.visible{
  opacity: 1;
  visibility: visible;
-}
-
-#tela-introducao.hidden {
- opacity: 0;
- visibility: hidden;
 }
 
 .progredir{
@@ -80,23 +75,14 @@ body{
  width: 240px;
  margin-bottom: 50px;
  background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/Avan%C3%A7ar.png);
- background-size: cover;
- cursor: pointer;
- background-position: center;
- background-color: transparent;
- border: none;
-position: fixed;
+ position: fixed;
  bottom: 20px;   
  right: 20px;   
  z-index: 1000;  
 }
 
-.progredir:hover{
-  filter: brightness(65%);
-}
-
-#tela-historia-1{
- background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
+#tela-historia-1, #tela-levantar{
+  background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
  min-height: 100vh; 
  background-size: cover;
  background-repeat: no-repeat;
@@ -111,51 +97,14 @@ position: fixed;
  opacity: 0;
  visibility: hidden;
  transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
-}
-
-#tela-historia-1.visible{
- opacity: 1;
- visibility: visible;
-}
-
-#tela-historia-1.hidden{
- opacity: 0;
- visibility: hidden;
 }
 
 .levantar{
  height: 140px;
  width: 240px;
  background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/bot%C3%A3o-removebg-preview.png);
- background-size: cover;
- background-repeat: no-repeat;
- cursor: pointer;
- background-position: center;
- background-color: transparent;
  border: none;
  position: fixed;
-}
-
-.levantar:hover{
-  filter: brightness(65%);
-}
-
-#tela-levantar{
- background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
 }
 
 .mensagem-visivel{
@@ -164,16 +113,8 @@ position: fixed;
   text-align: center;
   max-width: 80%;
   padding: 10px;
-}
-
-#tela-levantar.visible {
- opacity: 1;
- visibility: visible;
-}
-
-#tela-levantar.hidden {
- opacity: 0;
- visibility: hidden;
+  font-family: 'Syne Mono', monospace;
+  font-size: 50px;
 }
 
 #telaquarto{
@@ -194,26 +135,8 @@ position: fixed;
  transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
 }
 
-#telaquarto.visible{
- opacity: 1;
- visibility: visible;
-}
-
-#telaquarto.hidden{
- opacity: 0;
- visibility: hidden;
-}
-
-.mensagem-visivel1{
-  color: #F0E68C; 
-  font-size: 1.5em;
-  text-align: center;
-  max-width: 80%;
-  padding: 10px;
-}
-
 #telaquarto1{
- background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
+ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/levantando.png);
  min-height: 100vh; 
  background-size: cover;
  background-repeat: no-repeat;
@@ -230,13 +153,174 @@ position: fixed;
  transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
 }
 
-#telaquarto1.visible{
- opacity: 1;
+#ODespertar{
+ background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+} 
+
+.escolhas{
+  display: inline-flex; /* Usa flexbox para centralizar o texto vertical e horizontalmente */
+  align-items: center;   /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 15px 40px; /* Espaçamento interno (ajuste conforme o tamanho que você quer) */
+  min-width: 200px; /* Largura mínima para o botão, ajuste conforme o texto */
+  height: 60px; /* Altura fixa para o botão, ajuste conforme o texto */
+  margin: 10px; /* Espaçamento entre os botões */
+  text-decoration: none; /* Remove sublinhado se for um link */
+  
+  cursor: pointer; /* Indica que é clicável */
+  /* --- Background da Imagem --- */
+  background-image: url('url-da-sua-imagem-do-background.png'); /* SUBSTITUA PELA URL DA IMAGEM */
+  background-size: cover; /* Cobre todo o elemento, cortando se necessário */
+  background-position: center; /* Centraliza a imagem no background */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  border: 1px solid #4A352B; /* Borda sutil para definir o limite do botão */
+  border-radius: 5px; /* Levemente arredondado, como na imagem de referência */
+
+  /* --- Estilo do Texto Special Elite --- */
+  font-family: 'Special Elite', monospace;
+  font-size: 2em; /* Tamanho da fonte, ajuste se precisar */
+  font-weight: bold; /* Para dar mais presença */
+  color: #D4AF37; /* Cor dourada envelhecida para o texto (pode ajustar) */
+  text-transform: uppercase; /* Deixa o texto em maiúsculas */
+
+  /* Sombra do texto para dar profundidade, como se estivesse gravado */
+  text-shadow: 
+    1px 1px 0px rgba(0, 0, 0, 0.4),  
+    -1px -1px 0px rgba(255, 255, 255, 0.1); 
+
+  /* Transições para efeitos de hover */
+  transition: all 0.2s ease-in-out; 
+}
+
+/* Efeito de Hover */
+.escolhas:hover {
+  transform: translateY(-2px); /* Eleva o botão levemente */
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.6), /* Sombra para dar mais profundidade */
+    0 8px 16px rgba(0, 0, 0, 0.3);
+  /* Brilho sutil no texto ao passar o mouse, como se a luz o tocasse */
+  text-shadow: 
+    1px 1px 0px rgba(0, 0, 0, 0.6), 
+    -1px -1px 0px rgba(255, 255, 255, 0.2),
+    0 0 8px rgba(255, 140, 0, 0.3); 
+}
+
+/* Efeito de Active */
+.escolhas:active {
+  transform: translateY(0); /* Afunda o botão */
+  box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.2); /* Sombra mais suave para quando está pressionado */
+}
+
+#APorta{
+  background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+.tela{
+background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+#tela-odespertar.visible, #tela-aporta.visible, #tela-acomida.visible, #tela-oquartovazio.visible{
+  opacity: 1;
  visibility: visible;
 }
 
-#telaquarto1.hidden{
+#AComida{
+ background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
  opacity: 0;
  visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
 }
+
+#OQuartovazio{
+ background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+#AMusicafinal{
+ background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+
+
 
