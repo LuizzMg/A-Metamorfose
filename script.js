@@ -15,6 +15,9 @@ const telaacomida = get('tela-acomida');
 const oQuartovazio = get('OQuartovazio');
 const telaoquartovazio = get('tela-oquartovazio');
 const aMusicafinal = get('AMusicafinal');
+const Final1 = get('FINAL1');
+const Final2 = get('FINAL2');
+const Final3 = get('FINAL3');
 
 // Botões de Ação
 const startButton    = get('iniciar-button');
@@ -32,7 +35,9 @@ const Choices3 = get('choices3');
 const comid = get('comidabutton');
 const Choices4 = get('choices4')
 const quart = get('quartobutton');
-const Choices5 = get('choices5');
+const Escolhafinal1 = get('escolhafinal1');
+const Escolhafinal2 = get('escolhafinal2');
+const Escolhafinal3 = get('escolhafinal3');
 
 
 function configurarTransicao(botao, telaAtual, proximaTela) {
@@ -56,5 +61,8 @@ configurarTransicao(Choices3, aComida, telaacomida);
 configurarTransicao(comid, telaacomida, OQuartovazio);
 configurarTransicao(Choices4, OQuartovazio, telaoquartovazio);
 configurarTransicao(quart, telaoquartovazio, aMusicafinal);
+configurarTransicao(Escolhafinal1, aMusicafinal, Final1);
+configurarTransicao(Escolhafinal2, aMusicafinal, Final2);
+configurarTransicao(Escolhafinal3, aMusicafinal, Final3);
 // Último botão, reiniciar
 //configurarTransicao(AvancarButton1, telaQuarto1,    telaInicial);
