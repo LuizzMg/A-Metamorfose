@@ -324,6 +324,66 @@ background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremov
  transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
 }
 
+#FINAL1.visible, #FINAL2.visible, #FINAL3.visible{
+ opacity: 1;
+ visibility: visible;
+}
+
+#FINAL1{
+ background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+#FINAL2{
+ background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+#FINAL3{
+  background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+ min-height: 100vh; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+
 
 
 
