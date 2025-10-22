@@ -9,7 +9,7 @@ body{
 
 
 #tela-inicial {
- background-image: url("https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/novo%20fundo.png");
+ background-image: url("https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/aa.png");
  background-position: center;
  background-repeat: no-repeat;
  height: 100vh;
@@ -20,9 +20,11 @@ body{
 }
 
 .titulo-imagem {
+  position: absolute;  
+  top: 0;
+  left: 100px;
   width: 80%;
-  max-width: 450px; 
-  margin-bottom: 40px; 
+  max-width: 600px;
 }
 
 .start-button, .progredir, .levantar {
@@ -43,8 +45,9 @@ body{
  width: 280px;
  background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/inicio.png);
  position: absolute;
+ top:300px;
  bottom: 240px;
- left: 300px;
+ left: 290px;
 }
 
 #tela-introducao{
