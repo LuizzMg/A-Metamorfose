@@ -101,13 +101,23 @@ body {
 }
 
 .mensagem-visivel {
-    color: #F0E68C;
-    font-size: 1.5em;
-    text-align: center;
-    max-width: 80%;
-    padding: 10px;
-    font-family: 'Syne Mono', monospace;
-    font-size: 50px;
+    color: #F0E68C; 
+    background-color: rgba(34, 34, 34, 0.8);
+    font-family: 'Syne Mono', monospace; 
+    font-size: 36px; 
+    font-weight: 500; 
+    text-align: center; 
+    text-shadow: 0 0 5px rgba(240, 230, 140, 0.8); 
+    max-width: 70%; 
+    margin: 30px auto; 
+    padding: 20px 30px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out; 
+}
+.mensagem-visivel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
 #telaquarto {
@@ -118,40 +128,53 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 40px;
-    min-width: 200px;
-    height: 60px;
-    margin: 10px;
+    padding: 15px 45px;
+    min-width: 220px;
+    height: 65px;
+    margin: 5px;
     text-decoration: none;
     cursor: pointer;
     background-image: url('https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/h.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid #4A352B;
-    border-radius: 5px;
+    border: 3px solid #7D6434;
+    border-radius: 8px;
     font-family: 'Special Elite', monospace;
-    font-size: 2em;
-    font-weight: bold;
-    color: #D4AF37;
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #FFD700;
     text-transform: uppercase;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4),
-        -1px -1px 0px rgba(255, 255, 255, 0.1);
-    transition: all 0.2s ease-in-out;
+    text-shadow: 
+        1px 1px 1px rgba(0, 0, 0, 0.8),
+        -1px -1px 0px rgba(255, 255, 255, 0.3),
+        0 0 5px rgba(255, 215, 0, 0.4);
+    box-shadow: 
+        inset 0 0 10px rgba(0, 0, 0, 0.5),
+        0 6px 0 #4A352B,
+        0 8px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .escolhas:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6),
-        0 8px 16px rgba(0, 0, 0, 0.3);
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6),
-        -1px -1px 0px rgba(255, 255, 255, 0.2),
-        0 0 8px rgba(255, 140, 0, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 
+        inset 0 0 15px rgba(0, 0, 0, 0.6),
+        0 10px 0 #4A352B,
+        0 14px 25px rgba(0, 0, 0, 0.8);
+    text-shadow: 
+        1px 1px 1px rgba(0, 0, 0, 1), 
+        -1px -1px 0px rgba(255, 255, 255, 0.5),
+        0 0 10px #FFD700,
+        0 0 20px rgba(255, 140, 0, 0.5);
 }
 
 .escolhas:active {
-    transform: translateY(0);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    box-shadow: 
+        inset 0 0 10px rgba(0, 0, 0, 0.8),
+        0 2px 0 #4A352B,
+        0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .tela {
@@ -163,26 +186,39 @@ body {
 }
 
 #tela-odespertar, #tela-aporta, #tela-acomida, #tela-oquartovazio { /* BACKGROUND ESCRITAS*/
+background-image: url('https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/fundo.jpeg');
+  
 }
 
+
 #APorta{
+  background-image: url('https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/porta.png');
 }
 
 #AComida{
+  background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/Texto%20do%20seu%20par%C3%A1grafo.png);
 }
 
 #OQuartovazio{
+  background-image: url('https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/quartovazio.png');
 }
 
 #AMusicafinal{
+  background-image: url('https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/amusica.jpg');
 }
 
 #FINAL1{
+background-image: url('https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/2.png');
+  
 }
-
 #FINAL2{
+  background-image: url('https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/2.png');
+  
 }
 
 #FINAL3{
+  background-image: url('https://uploads.onecompiler.io/43ufzzaq8/43z6m7yzv/1.png');
 }
+
+
 
