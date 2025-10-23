@@ -12,7 +12,7 @@
     <img src="https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/a.png" class="titulo-imagem">
     <button class="start-button" data-target="tela-introducao"></button>
   </div>
-
+  
   <div id="tela-introducao" class="tela-jogo">
     <button class="progredir" data-target="tela-historia-1"></button>
   </div>
@@ -23,20 +23,35 @@
 
   <div id="tela-levantar" class="tela-jogo">
     <p class="mensagem-visivel"> Você tentou se levantar, mas suas novas pernas não obedeceram. </p>
-    <button class="progredir" data-target="telaquarto1"></button>
-  </div>
-
-  <div id="telaquarto1" class="tela-jogo">
     <button class="progredir" data-target="ODespertar"></button>
   </div>
 
+
+
   <div id="ODespertar" class="tela-jogo">
     <div id="choices1">
-      <button class="escolhas" data-target="tela-odespertar">GRITAR POR AJUDA</button>
-      <button class="escolhas" data-target="tela-odespertar">TENTAR SE LEVANTAR</button>
-      <button class="escolhas" data-target="tela-odespertar">EXAMINAR NOVO CORPO</button>
+      <button class="escolhas" data-target="gritar">GRITAR POR AJUDA</button>
+      <button class="escolhas" data-target="tentar_levantar">TENTAR SE LEVANTAR</button>
+      <button class="escolhas" data-target="examinar">EXAMINAR NOVO CORPO</button>
     </div>
   </div>
+  
+  <div id="gritar" class="tela-jogo">
+    <p class="mensagem-visivel"> (pelo choque da própria voz), a família do outro lado da porta fica imediatamente assustada. </p>
+    <button class="progredir" data-target="tela-odespertar"></button>
+  </div>
+  
+  <div id="tentar_levantar" class="tela-jogo">
+    <p class="mensagem-visivel"> (por se apegar à normalidade), mas você falha e cai no chão, fazendo um barulho alto. </p>
+    <button class="progredir" data-target="tela-odespertar"></button>
+  </div>
+  
+  <div id="examinar" class="tela-jogo">
+    <p class="mensagem-visivel">  (aceitação rápida da monstruosidade), a família fica apenas confusa com o silêncio.</p>
+    <button class="progredir" data-target="tela-odespertar"></button>
+  </div>
+  
+  
 
   <div id="tela-odespertar" class="tela-jogo">
     <p class="mensagem-visivel"> A família e o gerente da sua empresa estão do lado de fora da porta, exigindo que você saia. A maçaneta balança. A pressão aumenta. </p>
@@ -45,11 +60,28 @@
 
   <div id="APorta" class="tela-jogo">
     <div id="choices2">
-      <button class="escolhas" id="escolha1" data-target="tela-aporta">ACALMÁ-LOS COM A VOZ</button>
-      <button class="escolhas" id="escolha2" data-target="tela-aporta">USAR O CORPO PARA ABRIR A PORTA</button>
-      <button class="escolhas" id="escolha3" data-target="tela-aporta">IGNORÁ-LOS E RECUAR</button>
+      <button class="escolhas" id="escolha1" data-target="acalmar">ACALMÁ-LOS COM A VOZ</button>
+      <button class="escolhas" id="escolha2" data-target="usar-corpo">USAR O CORPO PARA ABRIR A PORTA</button>
+      <button class="escolhas" id="escolha3" data-target="ignorar">IGNORÁ-LOS E RECUAR</button>
     </div>
   </div>
+  
+    <div id="acalmar" class="tela-jogo">
+    <p class="mensagem-visivel"> (frustração), o gerente fica horrorizado e a família, apavorada. A Percepção deles muda para "Coisa Perigosa".+ </p>
+    <button class="progredir" data-target="tela-aporta"></button>
+  </div>
+  
+  <div id="usar-corpo" class="tela-jogo">
+    <p class="mensagem-visivel"> (uma vitória da sua antiga determinação), mas a visão de você fazendo isso é grotesca para quem está fora. </p>
+    <button class="progredir" data-target="tela-aporta"></button>
+  </div>
+  
+  <div id="ignorar" class="tela-jogo">
+    <p class="mensagem-visivel">  (isolamento), a família arromba a porta, encontrando você já na defensiva.</p>
+    <button class="progredir" data-target="tela-aporta"></button>
+  </div>
+  
+  
 
   <div id="tela-aporta" class="tela-jogo">
     <p class="mensagem-visivel"> Sua irmã, Grete, entra no quarto com uma bacia. Ela deixa leite (sua bebida favorita quando humano) e restos de vegetais podres. Ela não consegue olhar para você. </p>
@@ -58,11 +90,28 @@
 
   <div id="AComida" class="tela-jogo">
     <div id="choices3">
-      <button class="escolhas" id="escolha1" data-target="tela-acomida">BEBER O LEITE</button>
-      <button class="escolhas" id="escolha2" data-target="tela-acomida">DEVORAR OS RESTOS PODRES</button>
-      <button class="escolhas" id="escolha3" data-target="tela-acomida">ESPERAR ELA SAIR PARA COMER</button>
+      <button class="escolhas" id="escolha1" data-target="leite">BEBER O LEITE</button>
+      <button class="escolhas" id="escolha2" data-target="restos">DEVORAR OS RESTOS PODRES</button>
+      <button class="escolhas" id="escolha3" data-target="comer">ESPERAR ELA SAIR PARA COMER</button>
     </div>
   </div>
+  
+    <div id="leite" class="tela-jogo">
+    <p class="mensagem-visivel">  (apego ao passado), mas seu corpo fica fraco. Grete fica confusa. </p>
+    <button class="progredir" data-target="tela-acomida"></button>
+  </div>
+  
+  <div id="restos" class="tela-jogo">
+    <p class="mensagem-visivel">(abraçando o instinto), seu corpo fica mais forte. Grete fica enojada e confirma para si mesma que você é um animal. </p>
+    <button class="progredir" data-target="tela-acomida"></button>
+  </div>
+  
+  <div id="comer" class="tela-jogo">
+    <p class="mensagem-visivel">  Uma mistura de vergonha humana com necessidade de inseto. Grete percebe isso como um comportamento animal e arisco.</p>
+    <button class="progredir" data-target="tela-acomida"></button>
+  </div>
+  
+
 
   <div id="tela-acomida" class="tela-jogo">
     <p class="mensagem-visivel"> Grete e sua mãe decidem remover os móveis do seu quarto para que você tenha mais espaço para rastejar pelas paredes e teto, como um inseto. Elas começam a retirar um quadro que você amava. </p>
@@ -71,11 +120,28 @@
 
   <div id="OQuartovazio" class="tela-jogo">
     <div id="choices4">
-      <button class="escolhas" id="escolha1" data-target="tela-oquartovazio">AGARRAR-SE AO QUADRO</button>
-      <button class="escolhas" id="escolha2" data-target="tela-oquartovazio">DEIXAR QUE ELAS TIREM TUDO</button>
-      <button class="escolhas" id="escolha3" data-target="tela-oquartovazio">FAZER BARULHOS PARA ASSUSTÁ-LAS</button>
+      <button class="escolhas" id="escolha1" data-target="agarrar">AGARRAR-SE AO QUADRO</button>
+      <button class="escolhas" id="escolha2" data-target="tirem_tudo">DEIXAR QUE ELAS TIREM TUDO</button>
+      <button class="escolhas" id="escolha3" data-target="barulhos">FAZER BARULHOS PARA ASSUSTÁ-LAS</button>
     </div>
   </div>
+  
+    <div id="agarrar" class="tela-jogo">
+    <p class="mensagem-visivel">(um ato desesperado para salvar sua humanidade). Sua mãe desmaia de horror. A Percepção da Família muda para "Monstro Agressivo". </p>
+    <button class="progredir" data-target="tela-oquartovazio"></button>
+  </div>
+  
+  <div id="tirem_tudo" class="tela-jogo">
+    <p class="mensagem-visivel">(desespero e resignação). Elas não te veem, mas a sua passividade as convence de que você prefere o quarto vazio. </p>
+    <button class="progredir" data-target="tela-oquartovazio"></button>
+  </div>
+  
+  <div id="barulhos" class="tela-jogo">
+    <p class="mensagem-visivel">  (territorialismo de inseto). Elas fogem, largando os móveis. Você fica sozinho, mas em um ambiente hostil.</p>
+    <button class="progredir" data-target="tela-oquartovazio"></button>
+  </div>
+  
+  
 
   <div id="tela-oquartovazio" class="tela-jogo">
     <p class="mensagem-visivel"> A família alugou um quarto para inquilinos. Sua irmã está tocando violino na sala de estar. A música, uma das últimas coisas belas que você consegue processar, te atrai para fora do quarto. Os inquilinos e sua família te veem. </p>
@@ -101,7 +167,7 @@
   </div>
 
   <div id="FINAL3" class="tela-jogo">
-    <p class="mensagem-visivel"> Você confirma a todos que não há mais nada de humano ali. Seu pai te ataca com uma maçã (como no livro) ou te afugenta violentamente. Ferido e sem sanidade, seu fim é o de um animal indesejado.
+    <p class="mensagem-visivel"> Você confirma a todos que não há mais nada de humano ali. Seu pai te ataca com uma maçã e te afugenta violentamente. Ferido e sem sanidade, seu fim é o de um animal indesejado.
     </p>
     <button class="progredir" data-target="tela-inicial"></button>
   </div>
