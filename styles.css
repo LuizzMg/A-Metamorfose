@@ -74,7 +74,7 @@ body {
 }
 
 #tela-introducao {
-    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/brrbrr.png);
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/livro.png);
 }
 
 .progredir {
@@ -88,14 +88,9 @@ body {
     z-index: 1000;
 }
 
-#tela-historia-1 {
+#tela-historia-1, #tela-levantar, #gritar, #tentar_levantar, #examinar, #acalmar, #usar-corpo, #ignorar, #leite, #restos, #comer, #agarrar, #tirem_tudo, #barulhos{
     background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
 }
-
-#tela-levantar {
-    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
-}
-
 
 .levantar {
     height: 140px;
@@ -117,14 +112,6 @@ body {
 
 #telaquarto {
     background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
-}
-
-#telaquarto1 {
-    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/p.png);
-}
-
-#ODespertar {
-    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
 }
 
 .escolhas {
@@ -167,34 +154,35 @@ body {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-#APorta {
-    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
-}
-
 .tela {
     background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
 }
 
-#AComida {
-    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+#ODespertar{
+  background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/p.png);
 }
 
-#OQuartovazio {
-    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+#tela-odespertar, #tela-aporta, #tela-acomida, #tela-oquartovazio { /* BACKGROUND ESCRITAS*/
 }
 
-#AMusicafinal {
-    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+#APorta{
 }
 
-#FINAL1 {
-    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+#AComida{
 }
 
-#FINAL2 {
-    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+#OQuartovazio{
 }
 
-#FINAL3 {
-    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
+#AMusicafinal{
 }
+
+#FINAL1{
+}
+
+#FINAL2{
+}
+
+#FINAL3{
+}
+
