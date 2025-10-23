@@ -1,389 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
-body{
- margin: 0;
- font-family: Arial, sans-serif;
- overflow: hidden;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 
 #tela-inicial {
- background-image: url("https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/aa.png");
- background-position: center;
- background-repeat: no-repeat;
- height: 100vh;
- display: flex;
- align-items: center;
- position: relative;
- flex-direction: column;
+    background-image: url("https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/imagem_2025-10-22_214709047.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.tela-jogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+}
+
+.tela-jogo.visible {
+    opacity: 1;
+    visibility: visible;
 }
 
 .titulo-imagem {
-  position: absolute;  
-  top: 0;
-  left: 100px;
-  width: 80%;
-  max-width: 600px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 80%;
+    max-width: 600px;
 }
 
-.start-button, .progredir, .levantar {
-  background-size: cover;
-  background-position: center;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: filter 0.3s;
+.start-button,
+.progredir,
+.levantar {
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.3s;
 }
 
-.start-button:hover, .progredir:hover, .levantar:hover {
-  filter: brightness(65%);
+.start-button:hover,
+.progredir:hover,
+.levantar:hover {
+    filter: brightness(65%);
 }
 
 .start-button {
- height: 240px;
- width: 280px;
- background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/inicio.png);
- position: absolute;
- top:300px;
- bottom: 240px;
- left: 290px;
+    height: 240px;
+    width: 280px;
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/inicio.png);
+    position: absolute;
+    top: 300px;
+    bottom: 240px;
+    left: 290px;
 }
 
-#tela-introducao{
- background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/brrbrr.png);
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+#tela-introducao {
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/brrbrr.png);
 }
 
-#tela-introducao.visible, #tela-historia-1.visible, #tela-levantar.visible, #telaquarto.visible, #telaquarto1.visible, #ODespertar.visible, #APorta.visible, #AComida.visible, #OQuartovazio.visible, #AMusicafinal.visible{
- opacity: 1;
- visibility: visible;
+.progredir {
+    height: 140px;
+    width: 370px;
+    margin-bottom: 50px;
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/imagem_2025-10-22_212739833.png);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
 }
 
-.progredir{
- height: 140px;
- width: 240px;
- margin-bottom: 50px;
- background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/Avan%C3%A7ar.png);
- position: fixed;
- bottom: 20px;   
- right: 20px;   
- z-index: 1000;  
+#tela-historia-1 {
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
 }
 
-#tela-historia-1, #tela-levantar{
-  background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+#tela-levantar {
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
 }
 
-.levantar{
- height: 140px;
- width: 240px;
- background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/bot%C3%A3o-removebg-preview.png);
- border: none;
- position: fixed;
+
+.levantar {
+    height: 140px;
+    width: 390px;
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/imagem_2025-10-22_212820819.png);
+    border: none;
+    position: fixed;
 }
 
-.mensagem-visivel{
-  color: #F0E68C; 
-  font-size: 1.5em;
-  text-align: center;
-  max-width: 80%;
-  padding: 10px;
-  font-family: 'Syne Mono', monospace;
-  font-size: 50px;
+.mensagem-visivel {
+    color: #F0E68C;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 80%;
+    padding: 10px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 50px;
 }
 
-#telaquarto{
- background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+#telaquarto {
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
 }
 
-#telaquarto1{
- background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/levantando.png);
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+#telaquarto1 {
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/p.png);
 }
 
-#ODespertar{
- background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
-} 
-
-.escolhas{
-  display: inline-flex; /* Usa flexbox para centralizar o texto vertical e horizontalmente */
-  align-items: center;   /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  padding: 15px 40px; /* Espaçamento interno (ajuste conforme o tamanho que você quer) */
-  min-width: 200px; /* Largura mínima para o botão, ajuste conforme o texto */
-  height: 60px; /* Altura fixa para o botão, ajuste conforme o texto */
-  margin: 10px; /* Espaçamento entre os botões */
-  text-decoration: none; /* Remove sublinhado se for um link */
-  
-  cursor: pointer; /* Indica que é clicável */
-  /* --- Background da Imagem --- */
-  background-image: url('url-da-sua-imagem-do-background.png'); /* SUBSTITUA PELA URL DA IMAGEM */
-  background-size: cover; /* Cobre todo o elemento, cortando se necessário */
-  background-position: center; /* Centraliza a imagem no background */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
-  border: 1px solid #4A352B; /* Borda sutil para definir o limite do botão */
-  border-radius: 5px; /* Levemente arredondado, como na imagem de referência */
-
-  /* --- Estilo do Texto Special Elite --- */
-  font-family: 'Special Elite', monospace;
-  font-size: 2em; /* Tamanho da fonte, ajuste se precisar */
-  font-weight: bold; /* Para dar mais presença */
-  color: #D4AF37; /* Cor dourada envelhecida para o texto (pode ajustar) */
-  text-transform: uppercase; /* Deixa o texto em maiúsculas */
-
-  /* Sombra do texto para dar profundidade, como se estivesse gravado */
-  text-shadow: 
-    1px 1px 0px rgba(0, 0, 0, 0.4),  
-    -1px -1px 0px rgba(255, 255, 255, 0.1); 
-
-  /* Transições para efeitos de hover */
-  transition: all 0.2s ease-in-out; 
+#ODespertar {
+    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
 }
 
-/* Efeito de Hover */
+.escolhas {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 40px;
+    min-width: 200px;
+    height: 60px;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background-image: url('https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/h.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #4A352B;
+    border-radius: 5px;
+    font-family: 'Special Elite', monospace;
+    font-size: 2em;
+    font-weight: bold;
+    color: #D4AF37;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4),
+        -1px -1px 0px rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
 .escolhas:hover {
-  transform: translateY(-2px); /* Eleva o botão levemente */
-  box-shadow: 
-    0 4px 8px rgba(0, 0, 0, 0.6), /* Sombra para dar mais profundidade */
-    0 8px 16px rgba(0, 0, 0, 0.3);
-  /* Brilho sutil no texto ao passar o mouse, como se a luz o tocasse */
-  text-shadow: 
-    1px 1px 0px rgba(0, 0, 0, 0.6), 
-    -1px -1px 0px rgba(255, 255, 255, 0.2),
-    0 0 8px rgba(255, 140, 0, 0.3); 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6),
+        0 8px 16px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6),
+        -1px -1px 0px rgba(255, 255, 255, 0.2),
+        0 0 8px rgba(255, 140, 0, 0.3);
 }
 
-/* Efeito de Active */
 .escolhas:active {
-  transform: translateY(0); /* Afunda o botão */
-  box-shadow: 
-    0 1px 2px rgba(0, 0, 0, 0.2); /* Sombra mais suave para quando está pressionado */
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-#APorta{
-  background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+#APorta {
+    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
 }
 
-.tela{
-background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+.tela {
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/wmremove-transformed.png);
 }
 
-#tela-odespertar.visible, #tela-aporta.visible, #tela-acomida.visible, #tela-oquartovazio.visible{
-  opacity: 1;
- visibility: visible;
+#AComida {
+    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
 }
 
-#AComida{
- background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+#OQuartovazio {
+    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
 }
 
-#OQuartovazio{
- background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+#AMusicafinal {
+    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
 }
 
-#AMusicafinal{
- background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+#FINAL1 {
+    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
 }
 
-#FINAL1.visible, #FINAL2.visible, #FINAL3.visible{
- opacity: 1;
- visibility: visible;
+#FINAL2 {
+    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
 }
 
-#FINAL1{
- background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
+#FINAL3 {
+    background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
 }
-
-#FINAL2{
- background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
-}
-
-#FINAL3{
-  background-image: /*url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/plain-black-background.jpg);*/
- min-height: 100vh; 
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- position: absolute;
- top: 0;
- left: 0;
- opacity: 0;
- visibility: hidden;
- transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out;
-}
-
-
-
-
-
