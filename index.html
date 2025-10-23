@@ -7,116 +7,106 @@
 </head>
 
 <body>
-  
-  <div id="tela-inicial">
-  <img src="https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/a.png" class="titulo-imagem">
-  <button class="start-button" id="iniciar-button"> 
-  </button>
+
+  <div id="tela-inicial" class="tela-jogo visible">
+    <img src="https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/a.png" class="titulo-imagem">
+    <button class="start-button" data-target="tela-introducao"></button>
   </div>
-  
-  <div id="tela-introducao">
-    <button class="progredir" id="progredir-button">
-    </button>
+
+  <div id="tela-introducao" class="tela-jogo">
+    <button class="progredir" data-target="tela-historia-1"></button>
   </div>
-  
-  <div id="tela-historia-1">
-    <button class="levantar" id="levant">
-    </button>
+
+  <div id="tela-historia-1" class="tela-jogo">
+    <button class="levantar" data-target="tela-levantar"></button>
   </div>
-  
-  <div id="tela-levantar">
-     <p class="mensagem-visivel"> Você tentou se levantar, mas suas novas pernas não obedeceram. </p>
-      <button class="progredir" id="progredir-button2">
-    </button>
+
+  <div id="tela-levantar" class="tela-jogo">
+    <p class="mensagem-visivel"> Você tentou se levantar, mas suas novas pernas não obedeceram. </p>
+    <button class="progredir" data-target="telaquarto1"></button>
   </div>
-  
-  <div id="telaquarto1">
-  <button class="progredir" id="avancar-button1">
-  </button>
+
+  <div id="telaquarto1" class="tela-jogo">
+    <button class="progredir" data-target="ODespertar"></button>
   </div>
-  
-  <div id="ODespertar">
+
+  <div id="ODespertar" class="tela-jogo">
     <div id="choices1">
-  <button class="escolhas" >GRITAR POR AJUDA</button>
-  <button class="escolhas" >TENTAR SE LEVANTAR</button>
-  <button class="escolhas">EXAMINAR NOVO CORPO</button>
+      <button class="escolhas" data-target="tela-odespertar">GRITAR POR AJUDA</button>
+      <button class="escolhas" data-target="tela-odespertar">TENTAR SE LEVANTAR</button>
+      <button class="escolhas" data-target="tela-odespertar">EXAMINAR NOVO CORPO</button>
+    </div>
   </div>
+
+  <div id="tela-odespertar" class="tela-jogo">
+    <p class="mensagem-visivel"> A família e o gerente da sua empresa estão do lado de fora da porta, exigindo que você saia. A maçaneta balança. A pressão aumenta. </p>
+    <button class="progredir" data-target="APorta"></button>
   </div>
-  
-  <div id="tela-odespertar" class="tela">
-     <p class="mensagem-visivel"> A família e o gerente da sua empresa estão do lado de fora da porta, exigindo que você saia. A maçaneta balança. A pressão aumenta. </p>
-      <button class="progredir" id="despertbutton">
-    </button>
-  </div>
-  
-  <div id="APorta">
+
+  <div id="APorta" class="tela-jogo">
     <div id="choices2">
-  <button class="escolhas" id="escolha1">ACALMÁ-LOS COM A VOZ</button>
-  <button class="escolhas" id="escolha2">USAR O CORPO PARA ABRIR A PORTA</button>
-  <button class="escolhas" id="escolha3">IGNORÁ-LOS E RECUAR</button>
+      <button class="escolhas" id="escolha1" data-target="tela-aporta">ACALMÁ-LOS COM A VOZ</button>
+      <button class="escolhas" id="escolha2" data-target="tela-aporta">USAR O CORPO PARA ABRIR A PORTA</button>
+      <button class="escolhas" id="escolha3" data-target="tela-aporta">IGNORÁ-LOS E RECUAR</button>
+    </div>
   </div>
+
+  <div id="tela-aporta" class="tela-jogo">
+    <p class="mensagem-visivel"> Sua irmã, Grete, entra no quarto com uma bacia. Ela deixa leite (sua bebida favorita quando humano) e restos de vegetais podres. Ela não consegue olhar para você. </p>
+    <button class="progredir" data-target="AComida"></button>
   </div>
-  
-  <div id="tela-aporta" class="tela">
-     <p class="mensagem-visivel"> Sua irmã, Grete, entra no quarto com uma bacia. Ela deixa leite (sua bebida favorita quando humano) e restos de vegetais podres. Ela não consegue olhar para você. </p>
-      <button class="progredir" id="portabutton">
-    </button>
-  </div>
-  
-  <div id="AComida">
+
+  <div id="AComida" class="tela-jogo">
     <div id="choices3">
-  <button class="escolhas" id="escolha1">BEBER O LEITE</button>
-  <button class="escolhas" id="escolha2">DEVORAR OS RESTOS PODRES</button>
-  <button class="escolhas" id="escolha3">ESPERAR ELA SAIR PARA COMER</button>
+      <button class="escolhas" id="escolha1" data-target="tela-acomida">BEBER O LEITE</button>
+      <button class="escolhas" id="escolha2" data-target="tela-acomida">DEVORAR OS RESTOS PODRES</button>
+      <button class="escolhas" id="escolha3" data-target="tela-acomida">ESPERAR ELA SAIR PARA COMER</button>
+    </div>
   </div>
+
+  <div id="tela-acomida" class="tela-jogo">
+    <p class="mensagem-visivel"> Grete e sua mãe decidem remover os móveis do seu quarto para que você tenha mais espaço para rastejar pelas paredes e teto, como um inseto. Elas começam a retirar um quadro que você amava. </p>
+    <button class="progredir" data-target="OQuartovazio"></button>
   </div>
-  
-   <div id="tela-acomida" class="tela">
-     <p class="mensagem-visivel"> Grete e sua mãe decidem remover os móveis do seu quarto para que você tenha mais espaço para rastejar pelas paredes e teto, como um inseto. Elas começam a retirar um quadro que você amava. </p>
-      <button class="progredir" id="comidabutton">
-    </button>
-  </div>
-  
-  <div id="OQuartovazio">
+
+  <div id="OQuartovazio" class="tela-jogo">
     <div id="choices4">
-  <button class="escolhas" id="escolha1">AGARRAR-SE AO QUADRO</button>
-  <button class="escolhas" id="escolha2">DEIXAR QUE ELAS TIREM TUDO</button>
-  <button class="escolhas" id="escolha3">FAZER BARULHOS PARA ASSUSTÁ-LAS</button>
+      <button class="escolhas" id="escolha1" data-target="tela-oquartovazio">AGARRAR-SE AO QUADRO</button>
+      <button class="escolhas" id="escolha2" data-target="tela-oquartovazio">DEIXAR QUE ELAS TIREM TUDO</button>
+      <button class="escolhas" id="escolha3" data-target="tela-oquartovazio">FAZER BARULHOS PARA ASSUSTÁ-LAS</button>
+    </div>
   </div>
+
+  <div id="tela-oquartovazio" class="tela-jogo">
+    <p class="mensagem-visivel"> A família alugou um quarto para inquilinos. Sua irmã está tocando violino na sala de estar. A música, uma das últimas coisas belas que você consegue processar, te atrai para fora do quarto. Os inquilinos e sua família te veem. </p>
+    <button class="progredir" data-target="AMusicafinal"></button>
   </div>
-  
-  <div id="tela-oquartovazio" class="tela">
-     <p class="mensagem-visivel"> A família alugou um quarto para inquilinos. Sua irmã está tocando violino na sala de estar. A música, uma das últimas coisas belas que você consegue processar, te atrai para fora do quarto. Os inquilinos e sua família te veem. </p>
-      <button class="progredir" id="quartobutton">
-    </button>
+
+  <div id="AMusicafinal" class="tela-jogo">
+    <button class="escolhas" id="escolhafinal1" data-target="FINAL1">AVANÇAR EM DIREÇÃO À MÚSICA</button>
+    <button class="escolhas" id="escolhafinal2" data-target="FINAL2">RECUAR AO PERCEBER OS OLHARES</button>
+    <button class="escolhas" id="escolhafinal3" data-target="FINAL3">FICAR FURIOSO COM A INTERRUPÇÃO</button>
   </div>
-  
-  <div id="AMusicafinal">
-  <button class="escolhas" id="escolhafinal1">AVANÇAR EM DIREÇÃO À MÚSICA</button>
-  <button class="escolhas" id="escolhafinal2">RECUAR AO PERCEBER OS OLHARES</button>
-  <button class="escolhas" id="escolhafinal3">FICAR FURIOSO COM A INTERRUPÇÃO</button>
+
+  <div id="FINAL1" class="tela-jogo">
+    <p class="mensagem-visivel"> Sua família te vê como uma ameaça aos inquilinos. Grete grita: "Temos que nos livrar disso!". A dor da rejeição final quebra sua vontade de viver. Você recua para o quarto para morrer em paz.
+    </p>
+    <button class="progredir" data-target="tela-inicial"></button>
   </div>
+
+  <div id="FINAL2" class="tela-jogo">
+    <p class="mensagem-visivel"> A família discute e decide que você é um fardo insuportável. Você ouve tudo e aceita seu destino, morrendo de solidão e fome durante a noite.
+    </p>
+    <button class="progredir" data-target="tela-inicial"></button>
   </div>
-  
-   <div id="FINAL1">
-     <p class="mensagem-visivel"> A família alugou um quarto para inquilinos. Sua irmã está tocando violino na sala de estar. A música, uma das últimas coisas belas que você consegue processar, te atrai para fora do quarto. Os inquilinos e sua família te veem. </p>
-      <button class="progredir" id="buttonfinal">
-      </button>
+
+  <div id="FINAL3" class="tela-jogo">
+    <p class="mensagem-visivel"> Você confirma a todos que não há mais nada de humano ali. Seu pai te ataca com uma maçã (como no livro) ou te afugenta violentamente. Ferido e sem sanidade, seu fim é o de um animal indesejado.
+    </p>
+    <button class="progredir" data-target="tela-inicial"></button>
   </div>
-  
-   <div id="FINAL2">
-     <p class="mensagem-visivel"> A família alugou um quarto para inquilinos. Sua irmã está tocando violino na sala de estar. A música, uma das últimas coisas belas que você consegue processar, te atrai para fora do quarto. Os inquilinos e sua família te veem. </p>
-      <button class="progredir" id="buttonfinal">
-    </button>
-  </div>
-  
-   <div id="FINAL3">
-     <p class="mensagem-visivel"> A família alugou um quarto para inquilinos. Sua irmã está tocando violino na sala de estar. A música, uma das últimas coisas belas que você consegue processar, te atrai para fora do quarto. Os inquilinos e sua família te veem. </p>
-      <button class="progredir" id="buttonfinal">
-    </button>
-  </div>
-  
-   <script src="script.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
