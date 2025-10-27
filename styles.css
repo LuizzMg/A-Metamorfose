@@ -64,9 +64,9 @@ body {
 }
 
 .start-button {
-    height: 240px;
-    width: 280px;
-    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/inicio.png);
+    height: 100px;
+    width: 300px;
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/imagem_2025-10-22_212553305.png);
     position: absolute;
     top: 300px;
     bottom: 240px;
@@ -95,7 +95,7 @@ body {
 .levantar {
     height: 140px;
     width: 390px;
-    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/imagem_2025-10-22_212820819.png);
+    background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/imagem_2025-10-22_212739833.png);
     border: none;
     position: fixed;
 }
