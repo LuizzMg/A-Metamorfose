@@ -220,5 +220,25 @@ background-image: url('https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/2.png'
   background-image: url('https://uploads.onecompiler.io/43ufzzaq8/43z6m7yzv/1.png');
 }
 
+.dilema {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; 
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+.consequencia {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#tela-FIM{
+  background-image: url(https://uploads.onecompiler.io/43stnfw57/43z6m7yzv/fim.png);
+}
+
+
+
 
 
